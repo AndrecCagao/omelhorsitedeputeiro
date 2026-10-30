@@ -1,0 +1,3 @@
+Coloque nesta pasta as fotos autorizadas das pessoas adultas que consentiram em aparecer no site.
+Use estes nomes de arquivo: perfil-01.jpg, perfil-02.jpg, perfil-03.jpg.
+Depois, edite os nomes artísticos, apresentações e informações de contato no index.html.

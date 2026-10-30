@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maciota — espaço reservado, atendimento discreto e informações para adultos.">
+  <meta name="theme-color" content="#160f14">
+  <title>Maciota | Espaço Privado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="aviso" id="aviso">
+    <div class="aviso-caixa">
+      <span class="selo">18+</span>
+      <h2>Conteúdo exclusivo para adultos</h2>
+      <p>Este site é destinado a pessoas maiores de 18 anos. Ao continuar, você confirma que tem 18 anos ou mais.</p>
+      <button class="botao" id="entrar">Tenho 18 anos ou mais</button>
+      <a href="https://www.google.com" class="sair">Sair do site</a>
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <a class="marca" href="#inicio">MACIOTA<span>ESPAÇO PRIVADO · DISCRIÇÃO E RESPEITO</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">O espaço</a>
+      <a href="#companhia">Perfis</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-texto">
+        <p class="etiqueta">UMA EXPERIÊNCIA PRIVADA</p>
+        <h1>Seu momento.<br><em>Do seu jeito.</em></h1>
+        <p class="intro">Um espaço para adultos, com atendimento respeitoso, privacidade e discrição. Conheça o ambiente e consulte as informações de contato.</p>
+        <a class="botao" href="#companhia">Conheça os perfis <span aria-hidden="true">↓</span></a>
+        <p class="nota">Somente para maiores de 18 anos. Respeito e consentimento sempre.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <span class="linha-decorativa"></span>
+          <p class="hero-selo">MACIOTA</p>
+          <p class="hero-sub">PRIVACIDADE · ELEGÂNCIA · RESPEITO</p>
+          <span class="orb orb1"></span><span class="orb orb2"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="secao sobre">
+      <p class="etiqueta">O ESPAÇO</p>
+      <h2>Discrição em primeiro lugar.</h2>
+      <p>Um ambiente pensado para adultos que valorizam privacidade, comunicação clara e respeito mútuo. Atualize este texto com informações reais sobre o estabelecimento e seu funcionamento legal.</p>
+      <div class="valores">
+        <article><span>01</span><h3>Privacidade</h3><p>Tratamento discreto das informações e dos contatos.</p></article>
+        <article><span>02</span><h3>Respeito</h3><p>Limites, autonomia e consentimento são fundamentais.</p></article>
+        <article><span>03</span><h3>Transparência</h3><p>Combine previamente condições, valores e regras do local.</p></article>
+      </div>
+    </section>
+
+    <section id="companhia" class="secao perfis">
+      <p class="etiqueta">CONHEÇA AS PESSOAS</p>
+      <h2>Perfis disponíveis</h2>
+      <p class="secao-intro">Adicione fotos autorizadas e informações fornecidas pelas próprias pessoas adultas que escolherem aparecer no site.</p>
+      <div class="grade-perfis">
+        <article class="perfil">
+          <img src="imagens/perfil-01.jpg" alt="Foto de perfil 1 — substitua por imagem autorizada" loading="lazy">
+          <div class="perfil-info"><span class="disponibilidade">PERFIL 01</span><h3>Nome artístico</h3><p>Escreva uma apresentação breve, aprovada pela pessoa retratada.</p><a href="#contato" class="link-perfil">Consultar informações ↗</a></div>
+        </article>
+        <article class="perfil">
+          <img src="imagens/perfil-02.jpg" alt="Foto de perfil 2 — substitua por imagem autorizada" loading="lazy">
+          <div class="perfil-info"><span class="disponibilidade">PERFIL 02</span><h3>Nome artístico</h3><p>Escreva uma apresentação breve, aprovada pela pessoa retratada.</p><a href="#contato" class="link-perfil">Consultar informações ↗</a></div>
+        </article>
+        <article class="perfil">
+          <img src="imagens/perfil-03.jpg" alt="Foto de perfil 3 — substitua por imagem autorizada" loading="lazy">
+          <div class="perfil-info"><span class="disponibilidade">PERFIL 03</span><h3>Nome artístico</h3><p>Escreva uma apresentação breve, aprovada pela pessoa retratada.</p><a href="#contato" class="link-perfil">Consultar informações ↗</a></div>
+        </article>
+      </div>
+      <p class="aviso-fotos">Importante: publique somente fotos e dados com autorização explícita, de pessoas maiores de 18 anos. Não use imagens de terceiros sem consentimento.</p>
+    </section>
+
+    <section id="contato" class="secao contato">
+      <div><p class="etiqueta">FALE CONOSCO</p><h2>Informações e contato</h2><p>Substitua os dados abaixo pelos canais oficiais do estabelecimento.</p></div>
+      <div class="contato-card">
+        <p><span>WhatsApp</span><strong>Adicione seu número</strong></p>
+        <p><span>Atendimento</span><strong>Informe os dias e horários</strong></p>
+        <p><span>Localização</span><strong>Informe a região, se apropriado</strong></p>
+        <a class="botao" href="#" aria-label="Adicionar link de contato">Adicionar link de contato</a>
+      </div>
+    </section>
+  </main>
+  <footer><a class="marca" href="#inicio">MACIOTA<span>ESPAÇO PRIVADO</span></a><p>Somente para maiores de 18 anos · Privacidade, consentimento e respeito.</p><p class="rodape-pequeno">Confira as leis e regras locais aplicáveis antes de publicar ou operar o estabelecimento.</p></footer>
+  <script>
+    const aviso = document.getElementById('aviso');
+    if (sessionStorage.getItem('maciota18') === 'sim') aviso.hidden = true;
+    document.getElementById('entrar').addEventListener('click', () => {
+      sessionStorage.setItem('maciota18', 'sim');
+      aviso.hidden = true;
+    });
+  </script>
+</body>
+</html>
